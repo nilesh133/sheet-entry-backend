@@ -24,7 +24,7 @@ const saveFormData = async (req, res) => {
         res.status(200).json({ message: "Data saved to Google Sheets" });
     } catch (error) {
         console.error("Error saving data:", error);
-        res.status(500).json({ message: "Server error" });
+        res.status(500).json({ message: error?.message });
     }
 };
 
