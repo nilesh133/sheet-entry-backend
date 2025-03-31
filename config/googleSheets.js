@@ -8,9 +8,9 @@ const ACCESS_TOKEN = process.env.ACCESS_TOKEN
 
 const createGoogleSheetRow = async (rowData) => {
     try{
-        const rowData = {
-            values: [["John Doe", "johndoe@example.com", "New Entry"]],
-        };
+        // const rowData = {
+        //     values: [["John Doe", "johndoe@example.com", "New Entry"]],
+        // };
         const postData = JSON.stringify(rowData);
 
         const options = {
